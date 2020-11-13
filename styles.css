@@ -6,7 +6,7 @@
 .text {
     margin-left: 15vw;
     padding: 2vw;
-    width:55%;
+    width:40%;
     line-height: 1.5;
     font-family: "Artico";
 }
@@ -89,10 +89,41 @@ h1 { font-size: 20vw; }
     to {background-position: 200%;}
   }
 
+  /* image pop up */
+
 .pop{
     position: absolute;
-    right: 10vw;
-    max-width: 5vw;
+    right: -20%;
+    max-width: 100px;
     max-height: auto;
     z-index: -1;
+    box-shadow: 5px 10px 10px rgb(185, 184, 184);
+
+    animation: slide .2s cubic-bezier(.17,.67,.4,.93) forwards;
 }
+
+@keyframes slide {
+  from {right: -20%;}
+  to {right: 20%;}
+}
+
+/* scrollbar edits */
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
