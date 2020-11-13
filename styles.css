@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Artico";
+    src: url("/fonts/Artico Light.otf") format("otf");
+}
+
+.text {
+    margin-left: 15vw;
+    padding: 2vw;
+    width:55%;
+    line-height: 1.5;
+    font-family: "Artico";
+}
+
+.filler {
+    width: auto;
+    height: auto;
+    margin: 4vw -30vw;
+    padding: 1vw 5vw 1vw 1vw;
+    position: relative;
+    left: 50%;
+    right: 70%;
+    display: inline-block;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+h1 { font-size: 20vw; }
+
+.section {
+    border: 1px solid;
+    padding-left: .3em;
+    padding-right:.3em;
+    display: inline;
+}
+
+
+.linear-wipe {
+    background-size: 200% auto;
+      
+   background:
+   linear-gradient(to right, 
+        #ad7a7d 3%,
+        #ca8b7b 6%, 
+        #c5987d 9%, 
+        #c3a27d 12%,
+        #b7b082 15%,
+        #afb684 18%, 
+        #9eb78b 21%, 
+        #8ab993 24%,
+        #84b49a 27%,
+        #6ea7ac 30%, 
+        #68a4af 33%, 
+        #6ba2b0 36%,
+        #6a98b5 39%,
+        #7293ae 42%, 
+        #7491aa 45%, 
+        #777598 48%,
+        #826f7f 51%,
+        #7491aa 54%, 
+        #7293ae 57%,
+        #6a98b5 60%,
+        #6ba2b0 63%,
+        #68a4af 66%, 
+        #6ea7ac 69%,
+        #84b49a 72%,
+        #8ab993 75%,
+        #9eb78b 78%, 
+        #afb684 81%, 
+        #b7b082 84%,
+        #c3a27d 87%,
+        #c5987d 90%,
+        #ca8b7b 93%, 
+        #ad7a7d 96%  
+        );
+    background-size: 200% auto;
+    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+    animation-name: shine;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shine {
+    from {background-position: 0%;}
+    to {background-position: 200%;}
+  }
+
+.pop{
+    position: absolute;
+    right: 10vw;
+    max-width: 5vw;
+    max-height: auto;
+    z-index: -1;
+}
